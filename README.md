@@ -1,3 +1,5 @@
+[![Repo Visitors](https://visitor-badge.glitch.me/badge?page_id=LyQuid12.arithmos-cipher)](https://github.com/LyQuid12/arithmos-cipher)
+
 # Arithmos Cipher
 Arithmos Cipher is a simple [Cryptography](https://en.wikipedia.org/wiki/Cryptography) that I created myself in Python. Arithmos is taken from the Greek word (Arithmós or αριθμός) which means "Number"
 
