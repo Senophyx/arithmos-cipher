@@ -2,7 +2,7 @@
 Arithmos Cipher is a simple [Cryptography](https://en.wikipedia.org/wiki/Cryptography) that I created myself in Python. Arithmos is taken from the Greek word (Arithmós or αριθμός) which means "Number"
 
 # Explanation of how it works
-Basically, the given sentences will be exchanged with numbers in alphabetical order (Example: a = 01 to z = 26 and A = 27 to Z = 52). For numbers with one digit will be added 0 in front of it. Each one of the alphabet has a 2 digit number. And for uppercase letters starting from the number 27 after a lowercase z, which is 26.
+Basically, the given sentences will be exchanged with numbers in alphabetical order (Example: a = 01 to z = 26 and A = 27 to Z = 52). For numbers with one digit will be added 0 in front of it. Each one of the alphabet has a 2 digit number. And for uppercase letters starting from the number 27 after a lowercase z (26).
 
 ### Quick Example
 ```
