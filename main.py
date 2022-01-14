@@ -1,4 +1,4 @@
-from .dic import *
+from dic import *
 import re
 
 def encrypt(text:str):
