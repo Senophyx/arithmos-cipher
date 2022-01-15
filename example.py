@@ -1,4 +1,4 @@
-from main import *
+from core import *
 
 word = "Example"
 cipher = 31240113161205
