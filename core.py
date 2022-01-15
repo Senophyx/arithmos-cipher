@@ -1,4 +1,4 @@
-from dict import *
+from dictionary import *
 import re
 
 def encrypt(text:str):
