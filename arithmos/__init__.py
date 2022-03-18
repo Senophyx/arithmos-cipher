@@ -1,0 +1,5 @@
+__title__ = "Arithmos Cipher"
+__version__ = "0.0"
+__authors__ = "LyQuid"
+__license__ = "Apache License 2.0"
+__copyright__ = "Copyright 2021-present LyQuid"
