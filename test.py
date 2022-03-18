@@ -7,7 +7,7 @@ word = string.ascii_lowercase+" "+string.ascii_uppercase+" "+string.digits+" "+s
 encrypted = arithmos.encrypt(word)
 print("==============================")
 print(encrypted)
-
+print("==============================")
 # Decrypt
 decrypted = arithmos.decrypt(encrypted)
 print(decrypted)
