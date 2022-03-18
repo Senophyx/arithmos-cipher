@@ -1,3 +1,6 @@
+from .encrypt import encrypt
+from .decrypt import decrypt
+
 __title__ = "Arithmos Cipher"
 __version__ = "0.0"
 __authors__ = "LyQuid"
