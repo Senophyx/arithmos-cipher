@@ -18,7 +18,7 @@ print("==============================")
 if decrypted == word:
    check = colorgb.fore("True", "lgreen")
 else:
-   check = colorgb.fore("True", "lred")
+   check = colorgb.fore("False", "lred")
 
 print(f"Is it same : {check}")
 print("==============================")
