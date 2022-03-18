@@ -3,9 +3,9 @@ import arithmos
 word = "Example"
 
 # Encrypt
-encrypted = encrypt(word)
+encrypted = arithmos.encrypt(word)
 print(encrypted)
 
 # Decrypt
-decrypted = decrypt(encrypted)
+decrypted = arithmos.decrypt(encrypted)
 print(decrypted)
