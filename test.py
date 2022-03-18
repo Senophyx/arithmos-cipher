@@ -1,6 +1,7 @@
 import arithmos
 import string
 import colorgb
+from time import sleep
 
 word = string.ascii_lowercase+" "+string.ascii_uppercase+" "+string.digits+" "+string.punctuation
 
@@ -21,3 +22,4 @@ else:
 
 print(f"Is it same : {check}")
 print("==============================")
+sleep(5)
