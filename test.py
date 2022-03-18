@@ -13,10 +13,11 @@ print("==============================")
 decrypted = arithmos.decrypt(encrypted)
 print(decrypted)
 print("==============================")
-
+# Checking
 if decrypted == word:
    check = colorgb.fore("True", "lgreen")
 else:
    check = colorgb.fore("True", "lred")
 
 print(f"Is it same : {check}")
+print("==============================")
