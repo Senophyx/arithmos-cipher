@@ -4,11 +4,11 @@ import string
 word = string.ascii_lowercase+" "+string.ascii_uppercase+" "+string.digits+" "+string.punctuation
 
 # Encrypt
-encrypted = encrypt(word)
+encrypted = arithmos.encrypt(word)
 print("==============================")
 print(encrypted)
 
 # Decrypt
-decrypted = decrypt(encrypted)
+decrypted = arithmos.decrypt(encrypted)
 print(decrypted)
 print("==============================")
