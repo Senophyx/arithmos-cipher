@@ -1,6 +1,7 @@
-from core import *
+import arithmos
+import string
 
-word = "Testing 123 @#=/@)"
+word = string.ascii_lowercase+" "+string.ascii_uppercase+" "+string.digits+" "+string.punctuation
 
 # Encrypt
 encrypted = encrypt(word)
