@@ -1,12 +1,11 @@
-from core import *
+import arithmos
 
 word = "Example"
-cipher = 31240113161205
 
 # Encrypt
 encrypted = encrypt(word)
 print(encrypted)
 
 # Decrypt
-decrypted = decrypt(cipher)
+decrypted = decrypt(encrypted)
 print(decrypted)
