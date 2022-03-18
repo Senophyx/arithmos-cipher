@@ -48,6 +48,7 @@ setup(
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: MacOS',
-        'Operating System :: POSIX :: Linux'
+        'Operating System :: POSIX :: Linux',
+        'Operating System :: Android'
     ]
 )
