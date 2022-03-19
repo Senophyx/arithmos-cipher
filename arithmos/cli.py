@@ -16,7 +16,7 @@ def encrypt(text):
     for t in text:
         enc = ''.join(encrypt_dict[c] for c in list(t))
         encrypted.append(enc)
-    print(" ".join(str(i) for i in encrypted))
+    click.echo(" ".join(str(i) for i in encrypted))
 
 @click.command()
 @click.argument('cipher', nargs=-1)
@@ -26,11 +26,11 @@ def decrypt(cipher):
         decrypted.append(ciph)
     cipher = " ".join(str(i) for i in decrypted)
     separate = re.findall("\d{2}|\w|.|\d\s|\s+|\d$", cipher)
-    print(''.join(decrypt_dict[c] for c in separate))
+    click.echo(''.join(decrypt_dict[c] for c in separate))
 
 @click.command()
 def version():
-    print(__version__)
+    click.echo(__version__)
 
 cli.add_command(encrypt)
 cli.add_command(decrypt)
