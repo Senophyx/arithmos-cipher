@@ -32,10 +32,10 @@ pip install arithmos-cipher
 - **Example**
   - Via CLI
     ```
-    arithmos encrypt -t "Hello World!"
+    arithmos encrypt Hello World!
     ```
     ```
-    arithmos decrypt -c "5663606157 20051920 46314546"
+    arithmos decrypt 5663606157 20051920 46314546
     ```
   - Via packages
     ```py
