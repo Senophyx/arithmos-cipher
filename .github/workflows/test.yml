@@ -20,6 +20,6 @@ jobs:
         pip install git+https://github.com/LyQuid12/arithmos-cipher
     - name: Testing script
       run: |
-        arithmos encrypt -t "test TEST 123 $+()%"
-        arithmos decrypt -c "5663606157 20051920 46314546"
+        arithmos encrypt -t test TEST 123 $+()%
+        arithmos decrypt -c 5663606157 20051920 46314546
         python test.py
