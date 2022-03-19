@@ -9,8 +9,12 @@ __license__ = "Apache License 2.0"
 __copyright__ = "Copyright 2022-present LyQuid"
 
 
+get_version = get_version()
 
-if float(__version__) == float(str(get_version())):
-	pass
+if get_version == "offline":
+    pass
 else:
-	print(f"Warning! Your arithmos-cipher version is outdated! Latest version : {get_version()}")
+    if float(__version__) == float(str(get_version())):
+	    pass
+	else:
+	    print(f"Warning! Your arithmos-cipher version is outdated! Latest version : {get_version()}")
