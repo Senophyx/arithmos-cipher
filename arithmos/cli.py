@@ -10,18 +10,23 @@ def cli():
     pass
 
 @click.command()
-@click.option("--text", "-t", required=True)
+@click.argument('text', nargs=-1)
 def encrypt(text):
-    encrypted =''.join(encrypt_dict[c] for c in list(text))
-    click.echo(encrypted)
+    encrypted = []
+    for t in text:
+        enc = ''.join(encrypt_dict[c] for c in list(t))
+        encrypted.append(enc)
+    click.echo(" ".join(str(i) for i in encrypted))
 
 @click.command()
-@click.option("--cipher", "-c", required=True)
+@click.argument('cipher', nargs=-1)
 def decrypt(cipher):
+    decrypted = []
+    for ciph in cipher:
+        decrypted.append(ciph)
+    cipher = " ".join(str(i) for i in decrypted)
     separate = re.findall("\d{2}|\w|.|\d\s|\s+|\d$", cipher)
-    decrypted = ''.join(decrypt_dict[c] for c in separate)
-    click.echo(decrypted)
-    
+    click.echo(''.join(decrypt_dict[c] for c in separate))
 
 @click.command()
 def version():
