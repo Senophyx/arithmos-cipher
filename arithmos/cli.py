@@ -45,9 +45,9 @@ def cli():
 
 @click.command()
 @click.argument('text', nargs=-1)
-@click.option('--ignore', '-i', help="Set ignored letters", multiple=True)
+@click.option('--ignore', '-i', help="Set ignored letters.", multiple=True)
 def encrypt(text, ignore):
-    """Encrypting string to cipher"""
+    """Encrypting string to cipher."""
     text = ignorefunc(text, ignore)
     encrypted = []
     for t in text:
@@ -57,9 +57,9 @@ def encrypt(text, ignore):
     
 @click.command()
 @click.argument('cipher', nargs=-1)
-@click.option('--ignore', '-i', help="Set ignored number", multiple=True)
+@click.option('--ignore', '-i', help="Set ignored number.", multiple=True)
 def decrypt(cipher, ignore):
-    """Decrypting cipher to string"""
+    """Decrypting cipher to string."""
     cipher = ignorefunc(cipher, ignore)
     decrypted = []
     for ciph in cipher:
@@ -70,7 +70,7 @@ def decrypt(cipher, ignore):
 
 @click.command()
 def version():
-    """Check your arithmos-cipher version"""
+    """Check your arithmos-cipher version."""
     click.echo(__version__)
 
 cli.add_command(encrypt)
