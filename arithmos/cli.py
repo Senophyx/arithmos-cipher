@@ -12,7 +12,7 @@ def cli():
 @click.command()
 @click.argument('text', nargs=-1)
 def encrypt(text):
-    """Encrypting string to cipher."""
+    """Encrypting string to cipher"""
     encrypted = []
     for t in text:
         enc = ''.join(encrypt_dict[c] for c in list(t))
@@ -22,7 +22,7 @@ def encrypt(text):
 @click.command()
 @click.argument('cipher', nargs=-1)
 def decrypt(cipher):
-    """Decrypting cipher to string."""
+    """Decrypting cipher to string"""
     decrypted = []
     for ciph in cipher:
         decrypted.append(ciph)
