@@ -50,5 +50,9 @@ setup(
         'Operating System :: MacOS',
         'Operating System :: POSIX :: Linux',
         'Operating System :: Android'
-    ]
+    ],
+    entry_points="""
+        [console_scripts]
+        arithmos=arithmos.cli:cli
+    """
 )
