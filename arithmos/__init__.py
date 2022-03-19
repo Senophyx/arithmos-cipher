@@ -14,7 +14,7 @@ get_version = get_version()
 if get_version == "offline":
     pass
 else:
-    if float(__version__) == float(str(get_version())):
-	    pass
+	if float(__version__) == float(str(get_version)):
+		pass
 	else:
-	    print(f"Warning! Your arithmos-cipher version is outdated! Latest version : {get_version()}\n")
+		print(f"Warning! Your arithmos-cipher version is outdated! Latest version : {get_version()}")
