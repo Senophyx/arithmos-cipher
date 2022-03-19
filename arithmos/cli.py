@@ -6,7 +6,7 @@ from arithmos import __version__
 
 @click.group()
 def cli():
-    """Welcome to Arithmos Cipher on CLI based"""
+    """Welcome to Arithmos Cipher on CLI based!"""
     pass
 
 @click.command()
