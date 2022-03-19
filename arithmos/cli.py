@@ -1,7 +1,6 @@
 import click
 from .dictionary import *
 import re
-from .utils import get_version
 from arithmos import __version__
 
 
