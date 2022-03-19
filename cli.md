@@ -2,14 +2,15 @@
 The prefix is always `arithmos`.
 
 > **Content List**
-- Commands
-- Arguments
-- Option
-- Aliases
+- [Commands](https://github.com/LyQuid12/arithmos-cipher/blob/master/cli.md#commands)
+- [Arguments](https://github.com/LyQuid12/arithmos-cipher/blob/master/cli.md#arguments)
+- [Option](https://github.com/LyQuid12/arithmos-cipher/blob/master/cli.md#option)
+- [Aliases](https://github.com/LyQuid12/arithmos-cipher/blob/master/cli.md#aliases)
 
 <br>
 
-## Commands
+## Command
+List of all commands.
 - encrypt `[text]`
 - decrypt `[cipher]`
 - version
@@ -18,6 +19,7 @@ The prefix is always `arithmos`.
 <br>
 
 ## Arguments
+Commands arguments (the string/cipher)
 > encrypt `[text]`
 
 `text` : the string to be encrypted into a cipher.
@@ -34,12 +36,13 @@ Not have arguments.
 <br>
 
 ## Option
+Commands option
 
 > encrypt `[text]` `[option]` `[option args]`
 
 **Option :**
 - `--ignore`/`-i` | letters that will not be encrypted by the algorithm.
-if you don't want to encrypt more than 1 letter or sentence, add `--ignore`/`-g` again as before.
+if you don't want to encrypt more than 1 letter or sentence, add `--ignore`/`-g` again as before. | Required = `False`.
 
 **Example :**
 ```
@@ -62,7 +65,7 @@ arithmos encrypt example123 -i e -i 123
 
 **Option :**
 - `--ignore`/`-i` | number that will not be decrypted by the algorithm.
-if you don't want to decrypt more than 1 number or sentence, add `--ignore`/`-g` again as before.
+if you don't want to decrypt more than 1 number or sentence, add `--ignore`/`-g` again as before. | Required = `False`.
 
 **Example :**
 ```
