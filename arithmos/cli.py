@@ -20,7 +20,7 @@ def ignorefunc(original, ignore):
     	if ch in text:
     		text=text.replace(ch,"")
     		
-    # I don't know why, but the text is not a tuple
+    # I don't know why, but text is not a tuple
     text = text.replace("(", "")
     text = text.replace(")", "")
     text = text.replace(",", "")
