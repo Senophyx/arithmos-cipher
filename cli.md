@@ -11,8 +11,8 @@ The prefix is always `arithmos`.
 
 ## Command
 List of all commands.
-- encrypt `[text]`
-- decrypt `[cipher]`
+- encrypt
+- decrypt
 - version
 
 <br>
