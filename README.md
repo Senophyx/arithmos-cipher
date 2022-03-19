@@ -13,14 +13,15 @@ Basically, the given sentences will be exchanged with numbers in alphabetical or
 
 **Here the example of the explanation above :**
 ```
-LyQuid = 382543210904
+Example = 31240113161205
 
-38 : L
-25 : y
-43 : Q
-21 : u
-09 : i
-04 : d
+31 : E
+24 : x
+01 : a
+13 : m
+16 : p
+12 : l
+05 : e
 ```
 
 ## Usage
@@ -31,12 +32,8 @@ pip install arithmos-cipher
 
 - **Example**
   - Via CLI
-    ```
-    arithmos encrypt Hello World!
-    ```
-    ```
-    arithmos decrypt 5663606157 20051920 46314546
-    ```
+    
+    Check on the [documentation](https://github.com/LyQuid12/arithmos-cipher/blob/master/cli.md).
   - Via packages
     ```py
     import arithmos
