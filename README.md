@@ -23,26 +23,34 @@ LyQuid = 382543210904
 04 : d
 ```
 
-## Packages
+## Usage
 - **Install**
 ```
 pip install arithmos-cipher
 ```
 
 - **Example**
-```py
-import arithmos
+  - Via CLI
+    ```
+    arithmos encrypt -t "Hello World!"
+    ```
+    ```
+    arithmos decrypt -c "5663606157 20051920 46314546"
+    ```
+  - Via packages
+    ```py
+    import arithmos
 
-word = "Example"
+    word = "Example"
 
-# Encrypt
-encrypted = arithmos.encrypt(word)
-print(encrypted)
+    # Encrypt
+    encrypted = arithmos.encrypt(word)
+    print(encrypted)
 
-# Decrypt
-decrypted = arithmos.decrypt(encrypted)
-print(decrypted)
-```
+    # Decrypt
+    decrypted = arithmos.decrypt(encrypted)
+    print(decrypted)
+    ```
 
 ## Licence & Copyright
 This Project under [Apache License 2.0](https://github.com/LyQuid12/arithmos-cipher/blob/master/LICENSE).
