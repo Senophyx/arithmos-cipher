@@ -11,7 +11,7 @@ Arithmos Cipher is the most simple [Cryptography](https://en.wikipedia.org/wiki/
 ## Explanation of how it works
 Basically, the given sentences will be exchanged with numbers in alphabetical order (Example: `a = 01` to `z = 26` and `A = 27` to `Z = 52`). For numbers with one digit will be added `0` in front of it. Each one of the alphabet has a `2` digit number. And for `uppercase letters` starting from the number `27` after lowercase `(z = 26)`[.](https://youtube.com/watch?v=dQw4w9WgXcQ)
 
-**Here the explanation :**
+**Here the example of the explanation above :**
 ```
 LyQuid = 382543210904
 
