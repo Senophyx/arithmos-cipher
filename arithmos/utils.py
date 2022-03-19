@@ -26,11 +26,3 @@ def req_version(package="arithmos-cipher", url_pattern=URL_PATTERN):
         
     except RequestException:
         return "offline"
-        
-        
-def get_version():
-    call = req_version
-    if call == "offline":
-        pass
-    else:
-        return call
