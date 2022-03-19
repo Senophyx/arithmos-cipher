@@ -17,4 +17,4 @@ else:
 	if float(__version__) == float(str(get_version)):
 		pass
 	else:
-		print(f"Warning! Your arithmos-cipher version is outdated! Latest version : {get_version()}")
+		print(f"Warning! Your arithmos-cipher version is outdated! Latest version : {float(str(get_version))}")
