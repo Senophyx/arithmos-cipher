@@ -105,7 +105,7 @@ def version(advanced):
     """Check your arithmos-cipher version."""
     ver = __version__
     if advanced:
-        ver = (f"Local version : {__version__}\nPyPI version : {get_pypi_version()}")
+        ver = (f"Local version : {__version__}\nPyPI latest version : {get_pypi_version()}")
     
     click.echo(ver)
 
