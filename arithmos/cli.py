@@ -100,11 +100,11 @@ def decrypt(cipher, ignore):
     click.echo("".join(decrypt_dict[c] for c in separate))
 
 @click.command()
-@click.option('--advanced', '-a', help='Advanced version checking.', required=False, is_flag=True)
-def version(advanced):
+@click.option('--more', '-m', help='More version information.', required=False, is_flag=True)
+def version(more):
     """Check your arithmos-cipher version."""
     ver = __version__
-    if advanced:
+    if more:
         local_ver = f"Local version : {__version__}\n"
         requests_ver = f"Requests version : {requests.__version__}\n"
         click_ver = f"Click version : {click.__version__}\n"
