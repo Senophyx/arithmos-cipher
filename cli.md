@@ -14,6 +14,8 @@ List of all commands.
 - encrypt
 - decrypt
 - version
+- update
+- uninstall
 
 <br>
 <br>
@@ -29,6 +31,14 @@ Commands arguments (the string/cipher)
 `cipher` : the cipher to be decrypted into a string.
 
 > version
+
+Not have arguments.
+
+> update
+
+Not have arguments.
+
+> uninstall
 
 Not have arguments.
 
@@ -84,7 +94,18 @@ xampl (2401131612)
 <br>
 <br>
 
-> version
+> version `[option]`
+
+**Option :**
+- `--advanced`/`-a`
+
+Check your local version + PyPI latest version.
+
+> update
+
+Not have option.
+
+> uninstall
 
 Not have option.
 
@@ -98,3 +119,5 @@ Commands aliases.
 - encrypt = `enc`
 - decrypt = `dec`
 - version = `ver`
+- update = `up`
+- uninstall = `del`
