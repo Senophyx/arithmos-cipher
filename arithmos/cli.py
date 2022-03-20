@@ -105,10 +105,11 @@ def version(more):
     """Check your arithmos-cipher version."""
     ver = __version__
     if more:
-        local_ver = f"Local version : {__version__}\n"
+        local_ver = f"Current arithmos-cipher version : {__version__}\n"
         requests_ver = f"Requests version : {requests.__version__}\n"
         click_ver = f"Click version : {click.__version__}\n"
-        pypi_ver = f"PyPI latest version : {get_pypi_version()}"
+        pypi_ver = f"PyPI latest version (arithmos-cipher) : {get_pypi_version()}"
+
         ver = local_ver+requests_ver+click_ver+pypi_ver
     
     click.echo(ver)
