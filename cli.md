@@ -97,9 +97,9 @@ xampl (2401131612)
 > version `[option]`
 
 **Option :**
-- `--advanced`/`-a`
+- `--more`/`-m`
 
-Check your local version + PyPI latest version.
+Check your local (arithmos-cipher) version, PyPI latest version, click version, and requests version.
 
 > update
 
