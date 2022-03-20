@@ -5,6 +5,7 @@ from arithmos import __version__
 import requests
 import json
 from requests import RequestException
+import os
 
 try:
     from packaging.version import parse
@@ -66,6 +67,7 @@ def cli():
     - encrypt [text] | Alias : enc
     - decrypt [cipher] | Alias : dec
     - version | Alias : ver
+    and more...
     
     Check the CLI documentation for more information.
     https://github.com/LyQuid12/arithmos-cipher/blob/master/cli.md
@@ -107,13 +109,28 @@ def version(advanced):
     
     click.echo(ver)
 
+
+@click.command()
+def update():
+    """Update arithmos-cipher packages."""
+    os.system("pip install -U arithmos-cipher")
+
+@click.command()
+def uninstall():
+    """Uninstall arithmos-cipher packages."""
+    os.system("pip uninstall arithmos-cipher")
+
 cli.add_command(encrypt)
 cli.add_command(decrypt)
 cli.add_command(version)
+cli.add_command(update)
+cli.add_command(uninstall)
 
 
 ALIASES = {
     "enc": encrypt,
     "dec": decrypt,
-    "ver": version
+    "ver": version,
+    "up": update,
+    "del": uninstall
 }
