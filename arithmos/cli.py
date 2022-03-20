@@ -2,6 +2,35 @@ import click
 from .dictionary import *
 import re
 from arithmos import __version__
+import requests
+import json
+from requests import RequestException
+
+try:
+    from packaging.version import parse
+except ImportError:
+    from pip._vendor.packaging.version import parse
+
+
+URL_PATTERN = 'https://pypi.python.org/pypi/{package}/json'
+
+
+def get_pypi_version(package="arithmos-cipher", url_pattern=URL_PATTERN):
+    """Return version of package on pypi.python.org using json."""
+    try:
+        req = requests.get(url_pattern.format(package=package))
+        version = parse('0')
+        if req.status_code == requests.codes.ok:
+            j = json.loads(req.text.encode(req.encoding))
+            releases = j.get('releases', [])
+            for release in releases:
+                ver = parse(release)
+                if not ver.is_prerelease:
+                    version = max(version, ver)
+        return str(version)
+    
+    except RequestException:
+        return "Connection Error!"
 
 
 class AliasedGroup(click.Group):
@@ -69,9 +98,14 @@ def decrypt(cipher, ignore):
     click.echo("".join(decrypt_dict[c] for c in separate))
 
 @click.command()
-def version():
+@click.option('--advanced', '-a', help='Advanced version checking.', required=False, is_flag=True)
+def version(advanced):
     """Check your arithmos-cipher version."""
-    click.echo(__version__)
+    ver = __version__
+    if advanced:
+        ver = (f"Local version : {__version__}\nPyPI version : {get_pypi_version()}")
+    
+    click.echo(ver)
 
 cli.add_command(encrypt)
 cli.add_command(decrypt)
