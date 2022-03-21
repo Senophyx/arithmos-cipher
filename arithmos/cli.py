@@ -13,12 +13,10 @@ except ImportError:
     from pip._vendor.packaging.version import parse
 
 
-URL_PATTERN = 'https://pypi.python.org/pypi/{package}/json'
-
-
-def get_pypi_version(package="arithmos-cipher", url_pattern=URL_PATTERN):
+def get_pypi_version(package="arithmos-cipher"):
     """Return version of package on pypi.python.org using json."""
     try:
+        url_pattern = 'https://pypi.python.org/pypi/{package}/json'
         req = requests.get(url_pattern.format(package=package))
         version = parse('0')
         if req.status_code == requests.codes.ok:
