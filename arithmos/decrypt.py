@@ -3,7 +3,8 @@ import re
 
 def decrypt(cipher:str):
     """
-    A method to decrypt cipher to string
+    A method to decrypt cipher to string.
+    Return decrypted string.
     ---
     Parameter :
     - cipher: `str` | cipher to be decrypted
