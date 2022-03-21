@@ -1,6 +1,5 @@
 import arithmos
 import string
-import colorgb
 from time import sleep
 
 word = string.ascii_lowercase+" "+string.ascii_uppercase+" "+string.digits+" "+string.punctuation
@@ -16,9 +15,9 @@ print(decrypted)
 print("==============================")
 # Checking
 if decrypted == word:
-   check = colorgb.fore("True", "lgreen")
+   check = True
 else:
-   check = colorgb.fore("False", "lred")
+   check = False
 
 print(f"Is it same : {check}")
 print("==============================")
