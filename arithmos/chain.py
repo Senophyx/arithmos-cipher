@@ -1,5 +1,5 @@
 class chain:
-    def __injt__(self, level:int):
+    def __init__(self, level:int):
         self.level = level
         
     def encrypt(self):
