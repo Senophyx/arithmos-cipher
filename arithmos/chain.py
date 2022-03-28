@@ -12,9 +12,10 @@ class chain:
             enc = EncFunc(enc)
         return enc
     
-    def decrypt(self):
+    def decrypt(self, cipher:str):
+        cipher = str(cipher)
         level = self.level
-        dec = DecFunc(text)
+        dec = DecFunc(cipher)
         for _ in range(level):
             dec = DecFunc(dec)
         return dec
