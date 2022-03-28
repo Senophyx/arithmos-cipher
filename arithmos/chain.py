@@ -15,8 +15,7 @@ class chain:
     """
     def __init__(self, level:int):
         self.level = level
-      
-    @classmethod  
+        
     def encrypt(self, text:str):
         """
         A method to encrypt text repeatedly (based on level).
@@ -32,7 +31,6 @@ class chain:
             enc = EncFunc(enc)
         return enc
     
-    @classmethod
     def decrypt(self, cipher:str):
         """
         A method to decrypt text repeatedly (based on level) until find the actual text.
