@@ -23,6 +23,8 @@ class chain:
         ----
         Parameter:
         - text: `str`
+        
+        return encrypted cipher
         """
         level = self.level
         enc = EncFunc(text)
@@ -37,6 +39,8 @@ class chain:
         ----
         Parameter:
         - cipher: `str`
+        
+        return decrypted string
         """
         cipher = str(cipher)
         level = self.level
