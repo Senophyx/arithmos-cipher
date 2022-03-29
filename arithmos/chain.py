@@ -25,6 +25,7 @@ class chain:
         
         return encrypted cipher.
         """
+        text = str(text)
         level = self.level
         enc = EncFunc(text)
         for _ in range(level):
