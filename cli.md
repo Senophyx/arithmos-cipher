@@ -1,5 +1,6 @@
 # CLI Documentation
-The prefix is always `arithmos`.
+The prefix is always `arithmos`. <br>
+*Note* : Arithmos Cipher **chain** are **not available** on CLI. I'll add soon :)
 
 > **Content List**
 - [Commands](https://github.com/LyQuid12/arithmos-cipher/blob/master/cli.md#commands)
