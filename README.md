@@ -34,7 +34,7 @@ pip install arithmos-cipher
   - Via CLI
     
     Check on the [documentation](https://github.com/LyQuid12/arithmos-cipher/blob/master/cli.md). <br>
-    *Note :* Arithmos Cipher **chain** still **not available** on CLI
+    *Note* : Arithmos Cipher **chain** are **not available** on CLI.
   - Via packages
 
     Check on [examples](https://github.com/LyQuid12/arithmos-cipher/tree/master/examples) directory.
