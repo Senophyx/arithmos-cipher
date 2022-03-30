@@ -33,21 +33,11 @@ pip install arithmos-cipher
 - **Example**
   - Via CLI
     
-    Check on the [documentation](https://github.com/LyQuid12/arithmos-cipher/blob/master/cli.md).
+    Check on the [documentation](https://github.com/LyQuid12/arithmos-cipher/blob/master/cli.md). <br>
+    *Note :* Arithmos Cipher **chain** still **not available** on CLI
   - Via packages
-    ```py
-    import arithmos
 
-    word = "Example"
-
-    # Encrypt
-    encrypted = arithmos.encrypt(word)
-    print(encrypted)
-
-    # Decrypt
-    decrypted = arithmos.decrypt(encrypted)
-    print(decrypted)
-    ```
+    Check on [examples](https://github.com/LyQuid12/arithmos-cipher/tree/master/examples) directory.
 
 ## Licence & Copyright
 This Project under [Apache License 2.0](https://github.com/LyQuid12/arithmos-cipher/blob/master/LICENSE).
