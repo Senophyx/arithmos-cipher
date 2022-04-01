@@ -1,4 +1,5 @@
 from .dictionary import encrypt_dict
+from .errors import *
 
 def encrypt(text:str):
     """
@@ -8,5 +9,9 @@ def encrypt(text:str):
     Parameter :
     - text: `str` | the string to be encrypted
     """
-
-    return ''.join(encrypt_dict[c] for c in list(text))
+    
+    try:
+        return ''.join(encrypt_dict[c] for c in list(text))
+        
+    except KeyError as key:
+        raise UnknownKey(key)
