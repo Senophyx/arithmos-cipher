@@ -14,6 +14,8 @@ class chain:
     No return.
     """
     def __init__(self, level:int):
+        if level >= 13:
+            print("Your level is too high. may cause lag during encryption/decryption !")
         self.level = level
         
     def encrypt(self, text:str):
