@@ -1,5 +1,6 @@
 from .encrypt import encrypt as EncFunc
 from .decrypt import decrypt as DecFunc
+from time import sleep
 
 class chain:
     """
@@ -16,6 +17,7 @@ class chain:
     def __init__(self, level:int):
         if level >= 13:
             print("Your level is too high. may cause lag during encryption/decryption !")
+            sleep(1)
         self.level = level
         
     def encrypt(self, text:str):
