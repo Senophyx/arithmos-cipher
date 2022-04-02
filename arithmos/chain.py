@@ -16,9 +16,9 @@ class chain:
     """
     def __init__(self, level:int):
         if level >= 13:
-            print("Your level is too high. may cause lag during encryption/decryption !")
-            sleep(3)
+            print("Your level is too high. It cause lag during encryption/decryption !")
             print()
+            sleep(3)
         self.level = level
         
     def encrypt(self, text:str):
