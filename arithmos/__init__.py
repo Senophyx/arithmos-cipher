@@ -7,3 +7,7 @@ __version__ = "3.5b2"
 __authors__ = "LyQuid"
 __license__ = "Apache License 2.0"
 __copyright__ = "Copyright 2022-present LyQuid"
+
+
+def passlimit(number:int):
+    pass
