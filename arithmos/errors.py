@@ -6,4 +6,4 @@ class ArithmosErrors(Exception):
         
 class UnknownKey(ArithmosErrors):
     def __init__(self, key:str):
-        super().__init__(f"{key} cannot be encrypted.")
+        super().__init__(f"{key} cannot be encrypted/decrypted.")
