@@ -6,6 +6,7 @@ import requests
 import json
 from requests import RequestException
 import os
+import colorgb
 
 try:
     from packaging.version import parse
@@ -80,8 +81,11 @@ def encrypt(text, ignore):
     text = ignorefunc(text, ignore)
     encrypted = []
     for t in text:
-        enc = ''.join(encrypt_dict[c] for c in list(t))
-        encrypted.append(enc)
+        try
+            enc = ''.join(encrypt_dict[c] for c in list(t))
+            encrypted.append(enc)
+        except KeyError as ke:
+            click.echo(f"{colorgb.fore('ERROR', 'lred')} : {colorgb.fore(ke, 'lyellow')} cannot be encrypted.")
     click.echo("".join(str(i) for i in encrypted))
     
 @click.command()
@@ -93,9 +97,12 @@ def decrypt(cipher, ignore):
     decrypted = []
     for ciph in cipher:
         decrypted.append(ciph)
-    cipher = "".join(str(i) for i in decrypted)
-    separate = re.findall("\d{2}|\w|.|\d\s|\s+|\d$", cipher)
-    click.echo("".join(decrypt_dict[c] for c in separate))
+    try:
+        cipher = "".join(str(i) for i in decrypted)
+        separate = re.findall("\d{2}|\w|.|\d\s|\s+|\d$", cipher)
+        click.echo("".join(decrypt_dict[c] for c in separate))
+    except KeyError as ke:
+        click.echo(f"{colorgb.fore('ERROR', 'lred')} : {colorgb.fore(ke, 'lyellow')} cannot be decrypted.")
 
 @click.command()
 @click.option('--more', '-m', help='More version information.', required=False, is_flag=True)
