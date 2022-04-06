@@ -81,7 +81,7 @@ def encrypt(text, ignore):
     text = ignorefunc(text, ignore)
     encrypted = []
     for t in text:
-        try
+        try:
             enc = ''.join(encrypt_dict[c] for c in list(t))
             encrypted.append(enc)
         except KeyError as ke:
