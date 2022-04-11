@@ -113,9 +113,10 @@ def version(more):
         local_ver = f"Current arithmos-cipher version : {__version__}\n"
         requests_ver = f"Requests version : {requests.__version__}\n"
         click_ver = f"Click version : {click.__version__}\n"
+        colorgb_ver = f"Colorgb version : {colorgb.__version__}\n"
         pypi_ver = f"PyPI latest version (arithmos-cipher) : {get_pypi_version()}"
 
-        ver = local_ver+requests_ver+click_ver+pypi_ver
+        ver = local_ver+requests_ver+click_ver+colorgb_ver+pypi_ver
     
     click.echo(ver)
 
