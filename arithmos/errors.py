@@ -10,4 +10,4 @@ class UnknownKey(ArithmosErrors):
 
 class StringIsOdd(ArithmosErrors):
     def __init__(self):
-        super().__init__("The string you given cannot be as odd, it must be even.")
+        super().__init__("String cannot be odd, must be even.")
