@@ -1,6 +1,7 @@
 from .encrypt import encrypt
 from .decrypt import decrypt
 from .chain import chain
+from .errors import *
 
 __title__ = "Arithmos Cipher"
 __version__ = "4.0"
