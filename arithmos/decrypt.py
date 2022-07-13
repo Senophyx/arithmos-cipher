@@ -11,7 +11,7 @@ def decrypt(cipher:str):
     - cipher: `str` | cipher to be decrypted
     """
     
-    if len(cipher) % 2 == 0:
+    if len(cipher.replace(" ", "")) % 2 == 0:
         try:
             cipher = str(cipher)
             separate = re.findall("\d{2}|\w|.|\d\s|\s+|\d$", cipher)
