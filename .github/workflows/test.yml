@@ -21,4 +21,4 @@ jobs:
       run: |
         arithmos encrypt test TEST 123
         arithmos decrypt 5663606157 20051920 46314546
-        python ./examples/chain.py
+        python test.py
