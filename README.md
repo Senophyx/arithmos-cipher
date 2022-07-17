@@ -6,7 +6,7 @@
 [![Discord](https://img.shields.io/discord/887650006977347594?color=blue&label=EterNomm&logo=discord)](https://discord.com/invite/qpT2AeYZRN)
 
 # Arithmos Cipher
-Arithmos Cipher is the most simple [Cryptography](https://en.wikipedia.org/wiki/Cryptography) that I created myself in [Python](https://python.org). Arithmos is taken from the Greek word (Arithmós or αριθμός) which means "Number". *Not recommended for encrypting important thing*.
+Arithmos Cipher is the most simple [Cryptography](https://en.wikipedia.org/wiki/Cryptography) that created in [Python](https://python.org). Arithmos is taken from the Greek word (Arithmós or αριθμός) which means "Number". *Not recommended for encrypting important thing*.
 
 ## Explanation of how it works
 Basically, the given sentences will be exchanged with numbers in alphabetical order (Example: `a = 01` to `z = 26` and `A = 27` to `Z = 52`). For alphabet with one digit will be added `0` in front of it. Each one of the alphabet has a `2` digit number. And for `uppercase letters` starting from the number `27` after lowercase `(z = 26)`[.](https://youtube.com/watch?v=dQw4w9WgXcQ)
@@ -40,7 +40,7 @@ pip install arithmos-cipher
     Check on [examples](https://github.com/LyQuid12/arithmos-cipher/tree/master/examples) directory.
 
 ## Licence & Copyright
-This Project under [Apache License 2.0](https://github.com/LyQuid12/arithmos-cipher/blob/master/LICENSE).
+This Project under [MIT License](https://github.com/LyQuid12/arithmos-cipher/blob/master/LICENSE).
 ```
 Copyright (c) 2022-present LyQuid
 ```
