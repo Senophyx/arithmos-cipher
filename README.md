@@ -6,7 +6,12 @@
 [![Discord](https://img.shields.io/discord/887650006977347594?color=blue&label=EterNomm&logo=discord)](https://discord.com/invite/qpT2AeYZRN)
 
 # Arithmos Cipher
-Arithmos Cipher is the most simple [Cryptography](https://en.wikipedia.org/wiki/Cryptography) that created in [Python](https://python.org). Arithmos is taken from the Greek word (Arithmós or αριθμός) which means "Number". *Not recommended for encrypting important thing*.
+Arithmos Cipher is the most simple [Cryptography](https://en.wikipedia.org/wiki/Cryptography) that created in [Python](https://python.org).
+Arithmos is taken from the Greek word (Arithmós or αριθμός) which means "Number".
+
+Arithmos Cipher was created on [**January 14, 2022**](https://days.to/14-january/2022) and first released to the public on [**March 18, 2022**](https://days.to/18-march/2022).
+
+*Not recommended for encrypting important thing*.
 
 ## Explanation of how it works
 Basically, the given sentences will be exchanged with numbers in alphabetical order (Example: `a = 01` to `z = 26` and `A = 27` to `Z = 52`). For alphabet with one digit will be added `0` in front of it. Each one of the alphabet has a `2` digit number. And for `uppercase letters` starting from the number `27` after lowercase `(z = 26)`[.](https://youtube.com/watch?v=dQw4w9WgXcQ)
