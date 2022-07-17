@@ -27,12 +27,12 @@ setup(
     description = 'A simple Cipher encryption using number',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    license='Apache License 2.0',
+    license='MIT License',
     url='https://github.com/LyQuid12/arithmos-cipher',
     project_urls={
         "Source Code": "https://github.com/LyQuid12/arithmos-cipher",
         "Discord": "https://discord.gg/qpT2AeYZRN",
-        "Issue tracker": "https://github.com/LyQuid12/arithmos-cipher/issues"
+        "Report an Issue": "https://github.com/LyQuid12/arithmos-cipher/issues"
     },
     packages=find_packages(),
     include_package_data=True,
@@ -45,7 +45,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: MacOS',
         'Operating System :: POSIX :: Linux',
