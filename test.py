@@ -2,7 +2,7 @@ import arithmos
 import string
 from time import sleep
 
-word = string.ascii_lowercase+" "+string.ascii_uppercase+" "+string.digits+" "+string.punctuation
+word = string.ascii_lowercase+" "+string.ascii_uppercase+"\n"+string.digits+" "+string.punctuation
 
 # Encrypt
 encrypted = arithmos.encrypt(word)
